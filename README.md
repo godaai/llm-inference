@@ -26,6 +26,7 @@
 | --- | --- | ---| --- |
 | [Transformers](https://github.com/huggingface/transformers) | ![](https://img.shields.io/github/stars/huggingface/transformers.svg?style=social) | CPU / NVIDIA GPU / TPU / AMD GPU | Hugging Face |
 | [Text Generation Inference](https://github.com/huggingface/text-generation-inference) | ![](https://img.shields.io/github/stars/huggingface/text-generation-inference.svg?style=social) | CPU / NVIDIA GPU / AMD GPU | Hugging Face |
+| [gpt-fast](https://github.com/pytorch-labs/gpt-fast) | ![](https://img.shields.io/github/stars/pytorch-labs/gpt-fast.svg?style=social) | CPU / NVIDIA GPU / AMD GPU | PyTorch |
 | [TensorRT-LLM](https://github.com/NVIDIA/TensorRT-LLM) | ![](https://img.shields.io/github/stars/NVIDIA/TensorRT-LLM.svg?style=social) | NVIDIA GPU | NVIDIA |
 | [vLLM](https://github.com/vllm-project/vllm) | ![](https://img.shields.io/github/stars/vllm-project/vllm.svg?style=social) | NVIDIA GPU | UC Berkeley |
 | [llama.cpp](https://github.com/ggerganov/llama.cpp) / [ggml](https://github.com/ggerganov/ggml) | ![](https://img.shields.io/github/stars/ggerganov/llama.cpp.svg?style=social)![](https://img.shields.io/github/stars/ggerganov/ggml.svg?style=social) | CPU / Apple Silicon / NVIDIA GPU / AMD GPU | ggml |
