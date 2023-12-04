@@ -15,9 +15,13 @@
 * Generation Phase (Decoding Phase): genernate the next token based on the prompt and the previously generated tokens, in an **token-by-token** manner.
 * Autoregressive: predicting **one** token at a time, conditioned on the previously generated tokens.
 * KV (Key-Value) Cache: caching the attention Keys and Values in the Generation Phase, eliminating the recomputation for Keys and Values of previous tokens.
+* Weight: the parameter of the model, the $w$ in $y = w \cdot x + b$.
+* Activation:  the output of a neuron, which is computed using an activation function, the $z$ in $z = f(y)$, where $f$ is the activation function like ReLU.
+* GPU Kernel: function that is executed on multiple GPU computing cores to perform parallel computations.
+* HBM (High Bandwidth Memory): a type of advanced memory technology, which is like the main memory of data-center GPUs.
 * Continuous Batching: as opposed to static batching (which batches requests together and starts processing only when all requests within the batch are ready), continuously batches requests and maximizes memory utilization.
 * Offloading: transfering data between GPU memory and main memory or NVMe storage, as GPU memory is limited.
-* Post-training quantization: quantizing the weights and activations of the model **after** the model has been trained.
+* Post-Training Quantization: quantizing the weights and activations of the model **after** the model has been trained.
 * Quantization-Aware Training: incorporating quantization considerations during training.
 
 ## Open Source Software
@@ -55,7 +59,7 @@
 | Google's Practice | Efficiently Scaling Transformer Inference                                                | [MLSys 23](https://proceedings.mlsys.org/paper_files/paper/2023/file/523f87e9d08e6071a3bbd150e6da40fb-Paper-mlsys2023.pdf)     |                                                      | Parallelism                                  | ⭐️⭐️⭐️⭐️   |
 | FlashAttention | Fast and Memory-Efficient Exact Attention with IO-Awareness                              | [NeurIPS 23](https://proceedings.neurips.cc/paper_files/paper/2022/file/67d57c32e20fd0a7a302cb81d36e40d5-Paper-Conference.pdf) | [Code](https://github.com/Dao-AILab/flash-attention) | Effiencent Attention / GPU                   | ⭐️⭐️⭐️⭐️⭐️ |
 | Orca | Orca: A distributed serving system for Transformer-Based generative models               | [OSDI 22](https://www.usenix.org/system/files/osdi22-yu.pdf)                                                                   | [Code](https://github.com/vllm-project/vllm)         | Continuous Batching                          | ⭐️⭐️⭐️⭐️⭐️ |
-| PagedAttention | Efficient Memory Management for Large Language Model Serving with PagedAttention         | [SOSP 23](https://dl.acm.org/doi/pdf/10.1145/3600006.3613165)                                                                  | [Code](https://github.com/vllm-project/vllm)         | Effiencent Attention / Continuous Batching / | ⭐️⭐️⭐️⭐️⭐️ |
+| PagedAttention | Efficient Memory Management for Large Language Model Serving with PagedAttention         | [SOSP 23](https://dl.acm.org/doi/pdf/10.1145/3600006.3613165)                                                                  | [Code](https://github.com/vllm-project/vllm)         | Effiencent Attention / Continuous Batching | ⭐️⭐️⭐️⭐️⭐️ |
 | FlexGen              | FlexGen: High-throughput generative inference of large language models with a single GPU | [ICML 23](https://proceedings.mlr.press/v202/sheng23a/sheng23a.pdf)                                                            | [Code](https://github.com/FMInference/FlexGen)       | Offloading                                   | ⭐️⭐️⭐️     |
 | Speculative Decoding | Fast Inference from Transformers via Speculative Decoding                                | [ICML 23](https://proceedings.mlr.press/v202/leviathan23a/leviathan23a.pdf)                                                    |                                                      | Sampling                                     | ⭐️⭐️⭐️⭐️   |
 | LLM.int8()           | LLM.int8(): 8-bit Matrix Multiplication for Transformers at Scale                        | [NeurIPS 22](https://proceedings.neurips.cc/paper_files/paper/2022/file/c3ba4962c05c49636d4c6206a97e9c8a-Paper-Conference.pdf) | [Code](https://github.com/timdettmers/bitsandbytes)  | Quantization |⭐️⭐️⭐️⭐️ |
