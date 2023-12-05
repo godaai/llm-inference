@@ -4,11 +4,15 @@
 
 - [LLM Inference](#llm-inference)
   - [Table of Contents](#table-of-contents)
-  - [Glossary](#glossary)
+  - [Glossary and Illustration](#glossary-and-illustration)
   - [Open Source Software](#open-source-software)
   - [Paper List](#paper-list)
 
-## Glossary
+## Glossary and Illustration
+
+* Llama Architecture: stacks of N Transformer decoders; each decoder consists of Grouped-Query Attention (GQA), Rotary Position Embedding (RoPE), Residual Add, Root Mean Square Layer Normalization (RMSNorm), and Multi-Layer Perceptron (MLPs).
+
+![Llama 2](assets/svg/Llama2.svg)
 
 * Prompt: the initial text or instruction given to the model.
 * Prompt Phase (Prefill Phase): the phase to generate the first token based on the prompt.
